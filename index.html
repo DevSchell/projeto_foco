@@ -13,31 +13,31 @@
 </head>
 <body>
     <header>  
-
         <div>
-            <img src="images/Banner canal de violão no youtube moderno preto e verde (1).png" alt="logo_raposa" style="width: 500px; padding: 5px; background-color: rgb(242, 94, 19);">
+            <a href="https://www.twitch.tv/brunixwho" target="_blank">
+                <img src="images/Banner canal de violão no youtube moderno preto e verde (1).png" alt="logo_raposa" style="width: 500px; padding: 5px; background-color: rgb(242, 94, 19);">
+            </a>
         </div>
-
     </header>
 
-    <main> <!--Na tag main vai o timer-->
-
+    <main>
         <div class="card-timer">
-            <p style="font-size: 50px;">Tempo do foco</p>
-            <p style="font-size: 70px;">45:00</p>
-            <div class="start">
-                <button style="outline: none; border: none; background-color: transparent; padding: 5px;">
-                    <img src="images/botao-play-ponta-de-seta.png" alt="botao-iniciar" style="width: 50px; padding: 5px;">
+            <p id="timer-label" style="font-size: 50px;">Tempo do foco</p>
+            <p id="timer" style="font-size: 100px;">45:00</p>
+            <div class="buttons">
+                <button id="start" class="start-button">Start</button>
+                <button id="pause" class="start-button" style="display: none;">Stop</button> 
+                <button id="reset" class="start-button" style="display: none;">Reset</button>
+                <button id="setTime" class="setButton" style="outline: none; border: none; background-color: transparent;">
+                    <img id="ampulheta" class="ampulheta" src="images/cronometro.png" alt="ampulheta" style="width: 60px;">
                 </button>
             </div>
         </div>
-
     </main>
 
     <footer>
-
         <p style="font-size: 30px;">Coded by <a href="https://www.linkedin.com/in/leonardoschell/" class="dev" target="_blank">DevSchell</a></p>
-
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
